@@ -96,11 +96,11 @@ export default {
         }, {
             deckIds: [
                 'add-a-backdrop',
-                'add-sprite',
-                'glide-around'
+                'add-sprite'
             ]
         }
-        ]
+        ],
+        urlId: 1
     },
     'animate-a-name': {
         name: (
@@ -170,11 +170,11 @@ export default {
         }, {
             deckIds: [
                 'add-a-backdrop',
-                'glide-around',
-                'hide-and-show'
+                'glide-around'
             ]
         }
-        ]
+        ],
+        urlId: 2
     },
     'Make-Music': {
         name: (
@@ -238,11 +238,11 @@ export default {
         }, {
             deckIds: [
                 'add-a-backdrop',
-                'add-sprite',
-                'switch-costume'
+                'add-sprite'
             ]
         }
-        ]
+        ],
+        urlId: 3
     },
     'Make-A-Game': {
         name: (
@@ -323,11 +323,11 @@ export default {
         }, {
             deckIds: [
                 'add-a-backdrop',
-                'move-around-with-arrow-keys',
-                'add-effects'
+                'move-around-with-arrow-keys'
             ]
         }
-        ]
+        ],
+        urlId: 4
     },
 
     'Chase-Game': {
@@ -425,12 +425,12 @@ export default {
             image: stepScoreWhenTouch
         }, {
             deckIds: [
-                'add-a-backdrop',
                 'add-effects',
                 'move-around-with-arrow-keys'
             ]
         }
-        ]
+        ],
+        urlId: 5
     },
     'add-sprite': {
         name: (
@@ -455,11 +455,11 @@ export default {
             {
                 deckIds: [
                     'add-a-backdrop',
-                    'switch-costume',
-                    'change-size'
+                    'switch-costume'
                 ]
             }
-        ]
+        ],
+        urlId: 6
     },
     'add-a-backdrop': {
         name: (
@@ -475,10 +475,10 @@ export default {
         }, {
             deckIds: [
                 'change-size',
-                'switch-costume',
-                'spin-video'
+                'switch-costume'
             ]
-        }]
+        }],
+        urlId: 7
     },
     'change-size': {
         name: (
@@ -494,10 +494,10 @@ export default {
         }, {
             deckIds: [
                 'glide-around',
-                'spin-video',
-                'switch-costume'
+                'spin-video'
             ]
-        }]
+        }],
+        urlId: 8
     },
     'glide-around': {
         name: (
@@ -513,10 +513,10 @@ export default {
         }, {
             deckIds: [
                 'add-a-backdrop',
-                'switch-costume',
-                'change-size'
+                'switch-costume'
             ]
-        }]
+        }],
+        urlId: 9
     },
 
     'record-a-sound': {
@@ -533,24 +533,29 @@ export default {
         }, {
             deckIds: [
                 'Make-Music',
-                'switch-costume',
-                'change-size'
+                'switch-costume'
             ]
-        }]
-
+        }],
+        urlId: 10
     },
     'spin-video': {
-        name: 'Make It Spin',
+        name: (
+            <FormattedMessage
+                defaultMessage="Make It Spin"
+                description="Name for the 'Make It Spin' how-to"
+                id="gui.howtos.spin-video.name"
+            />
+        ),
         img: spinThumb,
         steps: [{
             video: 'https://www.youtube.com/embed/C76V5cuI9XM'
         }, {
             deckIds: [
                 'add-a-backdrop',
-                'switch-costume',
-                'change-size'
+                'switch-costume'
             ]
-        }]
+        }],
+        urlId: 11
     },
     'hide-and-show': {
         name: (
@@ -566,10 +571,10 @@ export default {
         }, {
             deckIds: [
                 'add-a-backdrop',
-                'switch-costume',
-                'change-size'
+                'switch-costume'
             ]
-        }]
+        }],
+        urlId: 12
     },
 
     'switch-costume': {
@@ -586,24 +591,30 @@ export default {
         }, {
             deckIds: [
                 'add-a-backdrop',
-                'add-effects',
-                'change-size'
+                'add-effects'
             ]
-        }]
+        }],
+        urlId: 13
     },
 
     'move-around-with-arrow-keys': {
-        name: 'Use Arrow Keys',
+        name: (
+            <FormattedMessage
+                defaultMessage="Use Arrow Keys"
+                description="Name for the 'Use Arrow Keys' how-to"
+                id="gui.howtos.move-around-with-arrow-keys.name"
+            />
+        ),
         img: moveArrowKeysThumb,
         steps: [{
             video: 'https://www.youtube.com/embed/uf6agkKnXJw'
         }, {
             deckIds: [
                 'add-a-backdrop',
-                'switch-costume',
-                'change-size'
+                'switch-costume'
             ]
-        }]
+        }],
+        urlId: 14
     },
     'add-effects': {
         name: (
@@ -619,9 +630,9 @@ export default {
         }, {
             deckIds: [
                 'add-a-backdrop',
-                'switch-costume',
-                'change-size'
+                'switch-costume'
             ]
-        }]
+        }],
+        urlId: 15
     }
 };
